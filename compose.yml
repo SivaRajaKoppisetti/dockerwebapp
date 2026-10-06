@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: SivaRajaKoppisetti/first:db
+    image: sivarajakoppisetti/first:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,7 +11,7 @@ services:
       - mynetwork
 
   application:
-    image: SivaRajaKoppisetti/first:javaapp
+    image: sivarajakoppisetti/first:javaapp
     ports:
       - "1111:8080"
     deploy:
